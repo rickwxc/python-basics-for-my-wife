@@ -59,3 +59,7 @@ print(flowers.index('Lotus'))
 t1 =('Constituency','Arizona')
 senator=dict([('Name', 'John'), ('Age', 15), t1])
 print (senator)
+
+
+tp = 'a', 'b', 'c'
+print (tp)

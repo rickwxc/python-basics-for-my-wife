@@ -5,6 +5,7 @@ l.extend(['e', 'f'])
 print (l)
 #a b c d e f
 
+
 #slicing
 print (l[:3]) # until 3 exlude 3
 print (l[3:]) # start 3 include 3 to end
@@ -15,7 +16,15 @@ print (l[-3:]) # 3nd last one to end, include -3
 
 l.append('g')
 l.insert(2, 'x') # a b x c ....
+
+#sort
+# sort without modify original
+print ('sorted(l)', sorted(l))
+print ('org', l)
+# sort with modify original
+l.sort()
 print (l)
+#Note: can not sort mixed string and numbers
 
 l.append('a')
 
@@ -56,3 +65,10 @@ print (l)
 #reverse
 l.reverse()
 print (l)
+
+
+
+numbers = [1, 2, 3,4,5, 6,7]
+
+numbers.append(300)
+print (numbers)
