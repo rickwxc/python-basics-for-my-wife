@@ -6,6 +6,8 @@ Contact_info = {
         }
 Contact_info["Mobile"] = 1234567
 print (Contact_info)
+# items in list and each with tuple format
+print (Contact_info.items())
 
 #update
 Contact_info.update({"email":"abc@domain.com"})
@@ -43,3 +45,5 @@ print ('loop with join:', '|'.join(lp))
 
 Contact_info.clear()
 print (Contact_info)
+
+
