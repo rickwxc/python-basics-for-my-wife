@@ -52,3 +52,7 @@ print (l)
 # use * for duplicate list elments
 l += [1, 2] * 3
 print (l)
+
+#reverse
+l.reverse()
+print (l)
