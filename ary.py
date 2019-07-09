@@ -21,6 +21,5 @@ print (a)
 for ele in a:
  print(ele)
 
-
-
-
+tmp = [ '[%d]' % (ele * 5) for ele in a]
+print (tmp)
