@@ -5,6 +5,9 @@ l.extend(['e', 'f'])
 print (l)
 #a b c d e f
 
+#[mapping−expression for element in source−list if filter−expression]
+print([ele * 2 for ele in l if ele != 'b'])
+
 
 #slicing
 print (l[:3]) # until 3 exlude 3
