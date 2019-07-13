@@ -37,11 +37,20 @@ x, y = Contact_info.popitem()
 print (x, y)
 print (Contact_info)
 
+
 #loop
 lp = {"%s=%s" % (key, value) for (key,value) in Contact_info.items()}
 print ('loop:', lp)
 #join
 print ('loop with join:', '|'.join(lp))
+
+# convert to set
+dictLoop = {"%s=%s" % (key, val) for (key,val) in Contact_info.items()}
+print ('dictLoop to set:', dictLoop)
+
+# convert to list of tuple 
+dictLoop = [ (key, val) for (key,val) in Contact_info.items()]
+print ('dictLoop to list of tuple:', dictLoop)
 
 Contact_info.clear()
 print (Contact_info)

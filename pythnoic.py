@@ -3,6 +3,14 @@
 #1. better loops for create new collection
 #[mapping−expression for element in source−list if filter−expression]
 
+#2. dictionary based string formatting, check ./dictinary-based-string-formatting.py
+conf = {
+        'name': 'rick',
+        'msg': 'hello',
+        'uid': 10001,
+}
+print ( '%(msg)s, %(name)s (uid=%(uid)d)' % conf)
+
 #2. lambda and boolean control 
 def formatString(str, flag):
     if flag == True:
