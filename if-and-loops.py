@@ -5,6 +5,9 @@ elif True or False :
 else:
     print("no")
 
+if not False:
+    print( "True")
+
 i = 0
 while i < 5:
  print(i)

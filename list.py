@@ -8,6 +8,8 @@ print (l)
 #[mapping−expression for element in source−list if filter−expression]
 print([ele * 2 for ele in l if ele != 'b'])
 
+#copy list
+print (l[:])
 
 #slicing
 print (l[:3]) # until 3 exlude 3
@@ -35,7 +37,7 @@ l.append('a')
 #only find the first occurence
 print (l.index('a'))
 #if not found, throw error!
-#print (l.index('j')) 
+#print (l.index('j'))
 
 l.append(True)
 print (l.index(True))
