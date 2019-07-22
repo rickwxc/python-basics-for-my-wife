@@ -2,8 +2,10 @@ import sys
 import pytest
 import random
 
+
 def greeting(name):
     print('Hi, {}'.format(name))
+
 
 def test_greeting(capsys):
     greeting('rick')
@@ -29,14 +31,16 @@ def test_yikes(capsys):
     assert 'sites down' in err
 
 
+@pytest.mark.skip
 def test_capsys_disabled(capsys):
     with capsys.disabled():
         print('\nalways print this')
         print('normal print, usually captured')
 
 
-@pytest.mark.parametrize('i', range(40))
+@pytest.mark.parametrize('i', range(4))
 def test_for_fun(i, capsys):
     if random.randint(1, 10) == 2:
-        with capsys.disabled():
-            sys.stdout.write('F')
+        pass
+        # with capsys.disabled():
+        #    sys.stdout.write('F')
